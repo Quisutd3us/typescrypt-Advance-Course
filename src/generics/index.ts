@@ -1,0 +1,2 @@
+export { getPokemon } from "./getPokemon";
+

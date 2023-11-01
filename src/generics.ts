@@ -1,4 +1,7 @@
+
 import { printObject,genericFunction } from "./generics/generics";
+import { Villain } from "./interfaces/villain";
+import { Hero } from "./interfaces/hero";
 
 printObject(123);
 printObject(new Date().getUTCMilliseconds());
@@ -12,3 +15,12 @@ console.log('------------------------')
 console.log(genericFunction(3.141610).toFixed(2))
 console.log(genericFunction('3.141610').length)
 console.log(genericFunction(new Date()).getFullYear())
+
+
+const deadpool ={
+    name:'DeadPool',
+    realName:'Wade Winston Wilson',
+    dangerLevel: 130
+}
+
+console.log(genericFunction<Villain>(deadpool).dangerLevel)

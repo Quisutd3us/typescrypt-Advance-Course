@@ -15,6 +15,11 @@ export interface Power {
         id:2,
         name:'Time Travel',
         description:'Past time travel Power',
+    },
+    {
+        id:3,
+        name:'Money',
+        description:'For inheritance Tom Bruce have a lot of Money',
     }
 ]
 

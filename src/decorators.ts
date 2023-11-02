@@ -1,4 +1,8 @@
 import { Pokemon } from "./decorators/pokemonClass";
 
+// (Pokemon.prototype as any).newName='Pikachu'
+
 const charmander =new Pokemon('Charmander')
-console.log(charmander)
+
+charmander.savePokemonDB(1000)
+
